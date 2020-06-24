@@ -31,9 +31,9 @@ def check_n(s1, s2):
 
 def q_tbl(n1, n2):
     '''
-    Returns the q-Rosembaum table value
+    Returns the q-Rosenbaum table value
     ------------------------------------
-    Возвращает табличное значение Q-Розембаума
+    Возвращает табличное значение Q-Розенбаума
     '''
     tbl005 = [[6],
               [6, 6],
@@ -84,7 +84,7 @@ def q_tbl(n1, n2):
     return q_005, q_001
 
 
-def q_rosembaum(s1, s2):
+def q_rosenbaum(s1, s2):
     answr = check_n(s1, s2)# Step 1. Checking for sample size
 
     if(answr == '+'):
@@ -118,4 +118,4 @@ def q_rosembaum(s1, s2):
             print('q < q_table there is no reason to reject Ho\n')
 
 
-q_rosembaum(smpl1, smpl2)
+q_rosenbaum(smpl1, smpl2)
